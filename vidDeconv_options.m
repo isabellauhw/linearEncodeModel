@@ -10,23 +10,17 @@ addpath(genpath('./utils'));
 addpath(genpath('./external'));
 addpath(genpath('./main'));
 addpath(genpath('./data'));
+addpath(genpath('./exampleData'))
+addpath(genpath('./examples'))
 
 %%% --- ENTER YOUR PATHS HERE ---
-% This is where we are now (where the code is to be found):
-options.codeDir = fileparts(mfilename('fullpath'));
-
-% This is the base root for both raw data and analysis:
-options.mainDir = '/Users/heiwinglau/Documents/Research/DPhil/rotation/lak/'; % please change
-options.rawDir = fullfile(options.mainDir, 'data'); % please change
-options.workDir = fullfile(options.mainDir, 'analysis'); % please change
-
 % Get the current directory
 currDir = pwd;
 
 % Set data root paths relative to the current directory
-options.bhvDataRoot    = fullfile(currDir, 'data', 'behav');
-options.neuralDataRoot = fullfile(currDir, 'data', 'neural');
-options.vidDataRoot    = fullfile(currDir, 'data', 'video');
+options.bhvDataRoot    = fullfile(currDir, 'exampleData', 'behav');
+options.neuralDataRoot = fullfile(currDir, 'exampleData', 'neural');
+options.vidDataRoot    = 'Volumes/Data/'; % macOS configuration, please change to '//QNAP-AL001/Data/' for Window
 
 % Data file name definition
 options.bhvFileExtension = '_behav_probability_sessions.csv'; % please change
