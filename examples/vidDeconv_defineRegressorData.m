@@ -152,8 +152,4 @@ for i = 1:length(mouseList)
             obj.bhv.choiceHistory(t) = nan; % no response / missing
         end
     end
-
-    % Load video PCs data
-    vidSessID = strcat("session_", replace((expRef), "-", "_"));
-    obj.vid = vidData.(mouse).(vidSessID);
 end

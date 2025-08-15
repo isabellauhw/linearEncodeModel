@@ -16,19 +16,21 @@ addpath(genpath('./data'));
 options.codeDir = fileparts(mfilename('fullpath'));
 
 % This is the base root for both raw data and analysis:
-options.mainDir = '/Users/heiwinglau/Documents/Research/DPhil/rotation/lak/';
+options.mainDir = '/Users/heiwinglau/Documents/Research/DPhil/rotation/lak/'; % please change
+options.rawDir = fullfile(options.mainDir, 'data'); % please change
+options.workDir = fullfile(options.mainDir, 'analysis'); % please change
 
-% options.rawDir = fullfile(options.mainDir, 'rawData');
-options.rawDir = fullfile(options.mainDir, 'data');
-options.workDir = fullfile(options.mainDir, 'analysis');
+% Get the current directory
+currDir = pwd;
 
-options.vidDataRoot = '/Volumes/Data/'; % Please change it accordingly - window system has another configuration
-options.bhvDataRoot = '/Users/heiwinglau/Documents/Research/DPhil/rotation/lak/deconvolGlm/linearEncodeModel/data/behav'; % Please change it accordingly
-options.neuralDataRoot = '/Users/heiwinglau/Documents/Research/DPhil/rotation/lak/deconvolGlm/linearEncodeModel/data/neural'; % Please change it accordingly 
+% Set data root paths relative to the current directory
+options.bhvDataRoot    = fullfile(currDir, 'data', 'behav');
+options.neuralDataRoot = fullfile(currDir, 'data', 'neural');
+options.vidDataRoot    = fullfile(currDir, 'data', 'video');
 
 % Data file name definition
-options.bhvFileExtension = '_behav_probability_sessions.csv';
-options.neuralFileExtension = '_fluor_timeseries_probability_sessions.csv';
+options.bhvFileExtension = '_behav_probability_sessions.csv'; % please change
+options.neuralFileExtension = '_fluor_timeseries_probability_sessions.csv'; % please change
 
 %%%--- Animal IDs -------------------------------------------------%%%
 % Archived options

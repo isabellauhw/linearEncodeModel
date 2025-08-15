@@ -4,7 +4,7 @@
 % running the configuration file.
 
 % Define subjects and sessions
-mouseList = option.animal;
+mouseList = options.animal;
 sessionListFull = unique(obj.bhv.expRef);
 sessionList = {erase(sessionListFull, ['_' mouseName])}; % removing the underscore and animal name in expRef
 
