@@ -24,7 +24,7 @@ In the `examples/` folder, run:
 
 ```
 vidDeconv_extractFacemapData;    % Organise video/facial features
-vidDeconv_defineRegressorData;   % Organise neural and behavioral data
+vidDeconv_loadBhvNeuralData;   % Load and Organise neural and behavioral data
 ```
 These scripts compile your data into an obj struct containing:
 
@@ -32,7 +32,7 @@ These scripts compile your data into an obj struct containing:
 *obj.bhv – behavioral data table
 obj.vid – video data table
 
-*Note*: Users should modify these scripts to fit their dataset formats.
+*Note*: Users should modify these scripts to fit their dataset formats, and define/ compute any variables they would like to include in the analysis.
 
 Run main analysis
 Go to the `main/` folder and run:
@@ -48,7 +48,7 @@ options = vidDeconv_options; % Make sure you change the configuration beforehand
 
 % Prepare demo data
 vidDeconv_extractFacemapData;
-vidDeconv_defineRegressorData;
+vidDeconv_loadBhvNeuralData;
 
 % Run main pipeline
 loop_run_vidDeconv;
