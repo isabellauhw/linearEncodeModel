@@ -8,3 +8,6 @@ data/
 *.fig
 *.log
 .DS_Store
+
+# Ignore options file - as it directs to the exampleData
+vidDeconv_options.m
