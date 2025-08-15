@@ -37,9 +37,9 @@ obj.vid – video data table
 Run main analysis
 Go to the `main/` folder and run:
 ```
-vidDeconv_config;
+loop_run_vidDeconv;
 ```
-Currently, this script runs in a loop over datasets. In the future, the `vidDeconv_config.m` file can be simplified to only include the procedures to run.
+Currently, this script runs in a loop over datasets. In the future, the `loop_run_vidDeconv.m` file can be simplified to only include the procedures to run.
 
 ### Usage Example
 ```
@@ -51,7 +51,7 @@ vidDeconv_extractFacemapData;
 vidDeconv_defineRegressorData;
 
 % Run main pipeline
-vidDeconv_config;
+loop_run_vidDeconv;
 ```
 
 ## Pipeline — Step-by-Step
