@@ -1,11 +1,12 @@
-% clear; clc;
-
-% Add utils to path
-addpath(genpath('./utils'));
+%% loop_run_vidDeconv 
+% Configuration file for running the linear encoding model. Ensure that the 
+% options struct, event, neural and video (optional) data is loaded before 
+% running the configuration file.
 
 % Define subjects and sessions
-mouseList = {'MFE008'};
-sessionList = {'2022-09-13_1'};
+mouseList = option.animal;
+sessionListFull = unique(obj.bhv.expRef);
+sessionList = {erase(sessionListFull, ['_' mouseName])}; % removing the underscore and animal name in expRef
 
 for i = 1:length(mouseList)
     mouse = mouseList{i};
@@ -38,9 +39,9 @@ for i = 1:length(mouseList)
         % ones, since expandR is not normalised, it is difficult to
         % visualise the event kernels there - video PCs has larger values than events
         % (normalisation happens in ridgeMML). 
-        % plotDesignMatrix(taskMat, options);
-        % plotDesignMatrix(vidMat, options);
-        % plotDesignMatrix(trialMat, options);
+        plotDesignMatrix(taskMat, options);
+        plotDesignMatrix(vidMat, options);
+        plotDesignMatrix(trialMat, options);
 
         % 8. Remove zero-rows (i.e., not related to the task events), and
         % some data wrangling
