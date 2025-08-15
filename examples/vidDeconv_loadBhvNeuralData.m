@@ -1,6 +1,6 @@
-%% vidDeconv_extractFacemapData
+%% vidDeconv_loadBhvNeuralData
 % An example data loading script to load and compile the behavioural data and
-% organise them as a table, stored in the object obj for running the
+% organise them as a table, stored in the object obj, for running the
 % configuration.
 
 % Define subjects and sessions
