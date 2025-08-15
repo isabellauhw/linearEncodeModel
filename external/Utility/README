@@ -1,0 +1,23 @@
+List of functions available for behaviour data analysis ( Alphabetic order): 
+
+generateLickRater_rig.py : This function only uses paqI/O file to plot 1) the licking raster 
+        for all rewarded trials & 2) the average lick density. Not rewarded trials cannot
+        be plotted based on paq file only - use 'generateLickRatersTwoStim_rig.py' (which is slower)  
+        Please change the Lines 170 - 180 based on your paq file. 
+
+generateLickRatersMoreStimTypes_rig.py : This function only uses paqI/O for licking & timestamp from RigBox.
+        To plot licks for all rewarded trials based on paq file - use 'generateLickRatersTwoStim_rig.py'   
+
+	This code uses matlab in python. That's why matlab should be compatible with 
+	python 3.9 and has the libraries in the code (with all the other codes cloned in this repo,
+	including spikes,Rigbox, LakLabCode) 
+
+
+	###Python requirements:
+	Please create an enviroment called decision-making-ev with python3.9 & install below libraries in line 14-22:
+
+	Matlab engine  follow the steps in the link below, pip install matlab is NOT working, pip matlab is a fake library)
+	https://uk.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html
+
+
+        

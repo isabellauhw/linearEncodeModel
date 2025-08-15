@@ -1,0 +1,12 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="12">
+<defs>
+        <style>.cls-1{fill:url(#linear-gradient);}</style>
+        <linearGradient id="linear-gradient" x1="0.5" y1="16" x2="0.5" gradientUnits="userSpaceOnUse">
+            <stop offset="0.1" stop-color="#231f20"/>
+            <stop offset="0.64" stop-color="#414042"/>
+            <stop offset="1" stop-color="#58595b"/>
+        </linearGradient>
+    </defs>
+    <title>Stroke Width DropDown 2</title>
+    <rect class="cls-1"  x ="5" y ="5.5" width="45" height="2"/>
+</svg>

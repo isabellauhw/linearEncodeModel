@@ -1,0 +1,4 @@
+<svg width="16" height="16" viewBox="0 0 16 16" id="imRefreshIcon" data-dojo-attach-point='imRefreshIcon' class="imRefreshIcon">
+    <path d="M 13.295949,2.9240651 C 12.052653,1.706613 10.035394,1 8.1404423,1 4.3505367,1 1,4.2888702 1,8.0000001 1,11.71113 4.3505367,15 8.1404423,15 11.338711,15 14.005365,12.575941 14.76849,9.679244 h -1.783485 c -0.703104,1.95632 -2.606632,3.264211 -4.8445627,3.264211 -2.8381419,0 -4.9514886,-2.164306 -4.9514886,-4.9434549 0,-2.7791492 2.1133467,-4.9434548 4.9514886,-4.9434548 1.4233586,0 2.7869727,0.4137665 3.7130127,1.3289546 L 9.2869605,7.160378 H 15 V 1.2830229 Z" style="fill-opacity:1;stroke-width:0.75590551;stroke-miterlimit:4;stroke-dasharray:none"/>
+    <rect y="9.0000019" x="10.000001" height="6.999999" width="5.999999" style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#c00000;stroke-width:0.75590551;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;paint-order:fill markers stroke"/>
+</svg>

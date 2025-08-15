@@ -1,0 +1,59 @@
+function visualiseIntertemporalPavlov(exp_ref, channel_labels)
+% VISUALISEINTERTEMPORALPAVLOV Visualise a single session of Intertemporal
+% Pavlov
+%   VISUALISEINTERTEMPORALPAVLOV(exp_ref, CHANNELLABELS) plots a single
+%   exp_ref
+%
+%   See also VISUALISETRAININGGRATING2AFC, VISUALISETRAININGPAVLOV1
+
+%% Load behavioural data for this session
+b = getBehavData(exp_ref, 'IntertemporalPavlov');
+b = b(6:end-5,:);
+
+%% Load photometry for this session and plot
+photometry = photometryAlign(exp_ref, ...
+    'plot', false, ...
+    'numSecToDetrend', 25, ...
+    'alignWithRewards', true);
+[~, idx] = arrayfun(@(x) min(abs(photometry.Timestamp - x)), b.stimulusOnsetTime);
+
+channels = {'channel1_0G','channel2_2G','channel3_4G','channel4_6G'}; % green filtered channels
+trial = nan(height(idx), 160);
+col = 1;
+clear g;
+for c = 1 : 4
+    if ~isempty(channel_labels{c})
+        for i = 1 : height(idx)
+            trial(i, :) = photometry.(channels{c})(idx(i) : idx(i) + 159);
+        end
+        
+        g(1,col) = gramm( ...
+            'x', 1:160, ...
+            'y', trial, ...
+            'color', b.parameter_reward_onset ...
+        );
+        g(1,col).stat_summary('setylim','true');
+        g(1,col).set_names( ...
+            'x', '', ...
+            'y', 'z-score & 95% CI', ...
+            'color', 'Reward delay (s)' ...
+        );
+        g(1,col).set_title({channel_labels{c}, 'All trials, separated by reward onset'})
+        g(1,col).axe_property( ...
+            'xtick', '', ...
+            'xcolor', 'none' ...
+        );
+        
+        col = col + 1;
+    end
+end
+
+figure( ...
+    'color', 'w', ...
+    'MenuBar', 'None', ...
+    'position', [258 121 1338 473] ...
+);
+g.set_title(sprintf('%s', exp_ref));
+g.draw();
+
+end

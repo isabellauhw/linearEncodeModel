@@ -1,0 +1,21 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 14 14" xml:space="preserve">
+<g class="mw-tristate-checkbox-background">
+	<rect width="14" height="14"/>
+</g>
+<g class="mw-tristate-checkbox-default">
+	<path d="M0,0v14h14V0H0z M13,13H1V1h12V13z"/>
+</g>
+<g class="mw-tristate-checkbox-hover">
+	<path d="M0,0v14h14V0H0z M13,13H1V1h12V13z"/>
+</g>
+<g class="mw-tristate-checkbox-focus">
+	<path d="M0,0v14h14V0H0z M13,13H1V1h12V13z"/>
+</g>
+<g class="mw-tristate-checkbox-indeterminate">
+	<rect x="3" y="3" width="8" height="8"/>
+</g>
+<g class="mw-tristate-checkbox-checked">
+	<polygon points="12,4 11,3 5,9 3,7 2,8 5,11"/>
+</g>
+</svg>

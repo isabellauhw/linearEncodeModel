@@ -1,9 +1,17 @@
 function options = vidDeconv_options
-%VIDDECOV_options Sets all options for the analysis of neuromodulators (DA/ ACh)
-% from the instrumental task in the vidDeconv (video deconvolution) study.
-%   OUT:    options         - the struct that holds all analysis options
+    % *vidDeconv_options*: Sets all options for the analysis of neuromodulators (DA/ ACh)
+    % from the instrumental task in the vidDeconv (video deconvolution) study.
+    % 
+    % OUT:
+    % options - the struct that holds all analysis options
 
-%%%---- ENTER YOUR PATHS HERE -----------------------------------------%%%
+%%%% --- General Set-Up ---
+addpath(genpath('./utils'));
+addpath(genpath('./external'));
+addpath(genpath('./main'));
+addpath(genpath('./data'));
+
+%%% --- ENTER YOUR PATHS HERE ---
 % This is where we are now (where the code is to be found):
 options.codeDir = fileparts(mfilename('fullpath'));
 
@@ -14,9 +22,9 @@ options.mainDir = '/Users/heiwinglau/Documents/Research/DPhil/rotation/lak/';
 options.rawDir = fullfile(options.mainDir, 'data');
 options.workDir = fullfile(options.mainDir, 'analysis');
 
-options.vidDataRoot = '/Volumes/Data/'; % Please change it accordingly
-options.bhvDataRoot = '/Users/heiwinglau/Documents/Research/DPhil/rotation/lak/deconvolGlm/videoDeconvGLM_new/data/behav'; % Please change it accordingly
-options.neuralDataRoot = '/Users/heiwinglau/Documents/Research/DPhil/rotation/lak/deconvolGlm/videoDeconvGLM_new/data/fluor'; % Please change it accordingly 
+options.vidDataRoot = '/Volumes/Data/'; % Please change it accordingly - window system has another configuration
+options.bhvDataRoot = '/Users/heiwinglau/Documents/Research/DPhil/rotation/lak/deconvolGlm/linearEncodeModel/data/behav'; % Please change it accordingly
+options.neuralDataRoot = '/Users/heiwinglau/Documents/Research/DPhil/rotation/lak/deconvolGlm/linearEncodeModel/data/neural'; % Please change it accordingly 
 
 % Data file name definition
 options.bhvFileExtension = '_behav_probability_sessions.csv';
@@ -27,7 +35,7 @@ options.neuralFileExtension = '_fluor_timeseries_probability_sessions.csv';
 % options.subjectIDs = ['AMR035', 'MFE008', 'MFE015', 'MFE018', 'MFE029', 'MFE030', 'MFE033', 'MFE035', 'MFE036']; 
 % options.dataReview.subjectIDs = ['AMR035', 'MFE008', 'MFE015', 'MFE018', 'MFE029', 'MFE030', 'MFE033', 'MFE035', 'MFE036'];
 
-options.subjectIDs = ['AMR035'; 'MFE008'; 'MFE015']; 
+options.animal = ['MFE008']; 
 
 %-- beta kernel config --------------------------------------------------%
 options.sRate = 20;  % Hz

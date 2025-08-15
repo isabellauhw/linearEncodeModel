@@ -1,0 +1,35 @@
+define('workspacebrowser/nls/WorkspaceBrowserFactory_ko-kr',{
+'datatoolsservices/l10n/nls/datatoolsservices':{"errorDialogTitle":"오류","dataTypeMenuCustomInputPlaceholder":"사용자 지정 형식 입력","_localized":{}}
+,
+'mw-notifications/l10n/nls/NotificationsResources':{"errorIconAltText":"Error Icon","warningIconAltText":"Warning Icon","infoIconAltText":"Information Icon","questionIconAltText":"Question Icon","successIconAltText":"Success Icon","_localized":{}}
+,
+'mw-dialogs/l10n/nls/dialog':{"ok":"확인","cancel":"취소","switchPanes":"창 전환","close":"닫기","yes":"예","no":"아니요","help":"도움말","submit":"제출","save":"저장","find":"찾기","create":"만들기","dontSave":"저장 안 함","apply":"적용","revert":"되돌리기","_localized":{}}
+,
+'mw-keybindings/l10n/nls/keyBindings':{"ALT":"Alt","BACKSPACE":"Backspace","CAPS_LOCK":"Caps Lock","CLEAR":"Clear","CTRL":"Ctrl","DELETE":"Delete","DOWN":"Down","ENTER":"Enter","END":"End","ESCAPE":"Escape","HELP":"Help","HOME":"Home","INSERT":"Insert","LEFT":"Left","NUM_LOCK":"Num Lock","NUM_PAD":"Num Pad","PAGE_UP":"Page Up","PAGE_DOWN":"Page Down","PAUSE_BREAK":"Pause","RIGHT":"Right","SCROLL_LOCK":"Scroll Lock","SHIFT":"Shift","SPACE":"Space","TAB":"Tab","UP":"Up","WINDOWS":"Windows","_localized":{}}
+,
+'dijit/nls/loading':{"loadingState":"로드 중...","errorState":"죄송합니다. 오류가 발생했습니다.","_localized":{}}
+,
+'l10n/nls/toolstrip':{"toolstripLabel":"툴스트립","showLabel":"레이블 표시","hideLabel":"레이블 숨기기","QAB":"빠른 액세스 도구 모음","removeFromQAB":"빠른 액세스 도구 모음에서 제거","addToQAB":"빠른 액세스 도구 모음에 추가","qabDefaultDropdownLabel":"일반 컨트롤","qabOverflowDropdownLabel":"추가 컨트롤","restoreFactoryControls":"디폴트 값 복원","restoreFactoryControlsDialogTitle":"복원 확인","restoreFactoryControlsDialogMessage":"모든 사용자 지정이 삭제되고 빠른 액세스 도구 모음이 디폴트 설정으로 복원됩니다.​","minimizeToolstrip":"툴스트립 최소화","restoreToolstrip":"툴스트립 복원","closeWidget":"\"${0}\" 탭 닫기","removeWidget":"갤러리에서 \"${0}\" 제거","homeButtonLabel":"MATLAB 홈","gallerySearch":"검색","showMore":"더 보기","noSearchMatchNode":"검색어와 일치하는 항목이 없습니다.","emptyCategoryPlaceholder":"이 범주는 비어 있음","listView":"세부 정보 보기","iconView":"아이콘 보기","navTop":"범주를 맨 위로 이동합니다.","navBottom":"범주를 맨 아래로 이동합니다.","favStarAdd":"즐겨찾기에 추가","favStarRemove":"즐겨찾기에서 제거","editWidget":"\"${0}\" 편집","favoritesCategoryTitle":"즐겨찾기","_localized":{}}
+,
+'dijit/nls/common':{"buttonOk":"확인","buttonCancel":"취소","buttonSave":"저장","itemClose":"닫기","_localized":{}}
+,
+'mw-colorpicker/l10n/nls/ColorPickerResources':{"ok":"확인","cancel":"취소","standardColors":"표준 색","customColors":"사용자 지정 색","recentColors":"최근에 사용한 색","preview":"미리보기","redTitle":"R","greenTitle":"G","blueTitle":"B","hexTitle":"16진수","hueTitle":"H","saturationTitle":"S","valueTitle":"V","doubleLabel":"RGB [0~1]","intLabel":"RGB [0~255]","hexLabel":"16진수","hsvLabel":"HSV","auto":"자동","none":"없음","flat":"평탄","interp":"보간","texturemap":"Texturemap","invalidHexErrorMessage":"값은 유효한 16진수 형식이어야 합니다.","_localized":{}}
+,
+'dojo/cldr/nls/number':{"scientificFormat":"#E0","currencySpacing-afterCurrency-currencyMatch":"[:^S:]","infinity":"∞","superscriptingExponent":"×","list":";","percentSign":"%","minusSign":"-","currencySpacing-beforeCurrency-surroundingMatch":"[:digit:]","decimalFormat-short":"000조","currencySpacing-afterCurrency-insertBetween":" ","nan":"NaN","plusSign":"+","currencySpacing-afterCurrency-surroundingMatch":"[:digit:]","currencySpacing-beforeCurrency-currencyMatch":"[:^S:]","currencyFormat":"¤#,##0.00;(¤#,##0.00)","perMille":"‰","group":",","percentFormat":"#,##0%","decimalFormat-long":"000조","decimalFormat":"#,##0.###","decimal":".","currencySpacing-beforeCurrency-insertBetween":" ","exponential":"E","_localized":{}}
+,
+'rendererseditors/l10n/nls/app':{"colorOrderEditorAddNew":"색 추가","colorOrderEditorAtLeastOne":"ColorOrder에는 값이 하나 이상 포함되어야 합니다.","errorTitle":"속성 오류","colormapEditorCustom":"사용자 지정","datepickerPlaceHolder":"날짜 선택","filePickerEditorBrowse":"찾아보기","lineStyleSolid":"- 실선","lineStyleDashed":"-- 파선","lineStyleDotted":": 점선","lineStyleDashDot":"-. 일점 쇄선","lineStyleNone":"없음","markerStylePlus":"+ 플러스 기호","markerStyleCircle":"o 원","markerStyleAsterisk":"* 별표","markerStylePoint":". 점","markerStyleCross":"x 십자","markerStyleSquare":"s 정사각형","markerStyleDiamond":"d 다이아몬드","markerStyleUpTriangle":"^ 위쪽 방향 삼각형","markerStyleDownTriangle":"v 아래쪽 방향 삼각형","markerStyleRightTriangle":"> 오른쪽 방향 삼각형","markerStyleLeftTriangle":"< 왼쪽 방향 삼각형","markerStylePentagram":"p 오각별(펜타그램)","markerStyleHexagram":"h 육각별(헥사그램)","markerStyleNone":"없음","orderButtonsAdd":"추가","orderButtonsRemove":"제거","orderButtonsUp":"위로","orderButtonsDown":"아래로","defaultLabel":"디폴트 값","exactlyLabel":"정확히","integersLabel":"정수 표기","scientificLabel":"과학 표기","customLabel":"사용자 지정","decimalsLabel":"소수 자릿수","viewFormatErrorText":"양의 정수만 허용됩니다.","scaleColorTableColorColumnHeader":"색","scaleColorTableStartColumnHeader":"시작","scaleColorTableEndColumnHeader":"종료","scaleColorLimitsExceptionMessage":"제한의 종료 값은 시작 값보다 커야 함","invalidNumberMessage":"값은 숫자형이어야 합니다.","invalidStartColorLimitMessage":"시작 값은 숫자형이어야 하며 종료 값보다 작아야 함","invalidEndColorLimitMessage":"종료 값은 숫자형이어야 하며 시작 값보다 커야 함","defaultItemName":"항목 %1","defaultOptionName":"옵션 %1","defaultStateName":"상태 %1","stateTableSelectedHdr":"선택","stateTableItemsHdr":"항목","ticksEditorErrorMsg":"눈금 값을 오름차순으로 지정하십시오.","resetLabel":"자동","stepby":"간격","ticksEditorStebByError":"간격 값이 너무 작음","cliboardIsEmpty":"클립보드가 비어 있음","nameColumnLabel":"이름","widthColumnLabel":"너비(px)","autoColumnLabel":"자동 너비","editableColumnLabel":"편집 가능","sortableColumnLabel":"정렬 가능","sunDay":"일요일","monDay":"월요일","tuesDay":"화요일","wednesDay":"수요일","thursDay":"목요일","friDay":"금요일","saturday":"토요일","emptyGraphicsObject":"비어 있음","_localized":{}}
+,
+'dijit/form/nls/validate':{"invalidMessage":"입력된 값이 올바르지 않습니다.","missingMessage":"이 값은 필수입니다.","rangeMessage":"이 값은 범위를 벗어납니다.","_localized":{}}
+,
+'dijit/form/nls/ComboBox':{"previousMessage":"이전 선택사항","nextMessage":"기타 선택사항","_localized":{}}
+,
+'mw-datepicker/l10n/nls/CalendarResources':{"previousMonthTooltipText":"이전 달을 표시합니다.","todayTooltipText":"오늘을 표시합니다.","nextMonthTooltipText":"다음 달을 표시합니다.","monthTooltipText":"월을 선택합니다.","yearTooltipText":"연도를 선택합니다.","_localized":{}}
+,
+'mw-datepicker/l10n/nls/DatePickerResources':{"disabledDateMessage":"날짜는 허용되지 않습니다.","invalidDateMessage":"유효하지 않은 날짜입니다. %1 형식을 사용하십시오.","missingDateMessage":"날짜가 누락되었습니다. %1을(를) 지정하십시오.","_localized":{}}
+,
+'rendererseditors/l10n/nls/mwTableRenderers':{"loading":"불러오는 중...","_localized":{}}
+,
+'variableeditor/app/l10n/nls/app':{"errorDialogTitle":"오류","invalidHeaderName":"${varName}은(는) 유효한 변수 이름이 아님","duplicateVariableNames":"중복된 변수 이름: ${varName}","structNameColumn":"이름","structFieldColumn":"필드","structPropertyColumn":"속성","structValueColumn":"값","structSizeColumn":"크기","structClassColumn":"클래스","emptyGraphicsObject":"비어 있음","_localized":{}}
+,
+'workspacebrowser/app/l10n/nls/app':{"helloWorld":"Hello World!","dialogTitle":"Title","title":"작업 공간","_localized":{}}
+});

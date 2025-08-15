@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 35 35" version="1.1">
+    <metadata>
+        <rdf:RDF>
+            <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                <dc:title></dc:title>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <g>
+        <path style="opacity:1;fill:transparent;fill-opacity:1;stroke:#0e4065;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" d="m 10.477659,23.288423 c 0.710125,2.223253 1.420252,2.219502 2.130378,0 0.710126,-2.219502 1.420253,-6.439996 2.130376,-9.651022 0.710127,-3.211024 1.420252,-5.0855716 2.130379,-4.2951084 0.710125,0.7904624 1.420251,4.1767054 2.130379,7.7395184 0.710125,3.562815 1.420251,6.944379 2.130377,7.739517 0.710126,0.79514 1.420252,-1.086163 2.130376,-4.295106 0.710127,-3.208945 1.420252,-7.427769 2.130379,-9.651022 0.710125,-2.2232546 1.420252,-2.2195036 2.130378,0"/>
+        <rect transform="scale(-1,1)" y="6.7990031" x="-4.501575" height="23.499998" width="0.0015747562" style="opacity:1;fill:#000000;fill-opacity:1;stroke:#0e4065;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"/>
+        <path transform="matrix(1.1509671,0,0,0.84420741,-1.1366524,-0.83395879)" d="M 1.8588432,7.4846939 4.8746755,2.0520963 8.0715269,7.3801825 Z" style="opacity:1;fill:#0e4065;fill-opacity:1;stroke:#0e4065;stroke-width:1.01607871;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"/>
+        <rect transform="matrix(0,-1,-1,0,0,0)" y="-28" x="-30.499212" height="23.5" width="0.0015747562" style="opacity:1;fill:#000000;fill-opacity:1;stroke:#0e4065;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"/>
+        <path transform="matrix(0,1.1509671,-0.84420741,0,35.682714,24.641453)" d="M 1.8588432,7.4846939 4.8746755,2.0520963 8.0715269,7.3801825 Z" style="opacity:1;fill:#0e4065;fill-opacity:1;stroke:#0e4065;stroke-width:1.01651007;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"/>
+    </g>
+</svg>

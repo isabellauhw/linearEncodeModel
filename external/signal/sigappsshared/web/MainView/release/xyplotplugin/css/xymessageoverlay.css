@@ -1,0 +1,1 @@
+.xyMessageOverlay {border: 1px solid #dedfe0; background-color: rgba(255,255,255,0.9); opacity: 0.95; position: absolute; right: 12px; width: 25% ; overflow: hidden;}.xyMessageOverlayClose {float: right; display: inline-block; padding: 1px 4px; background: #808080; color: #fff; cursor: pointer;}.xyMessageLabel {font-size: 13px; color: gray;}

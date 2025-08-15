@@ -15,7 +15,7 @@ function [neuralPred, cBeta, cR, subIdx, cRidge, cLabels_sorted] = crossValModel
     % - cBeta:        Cell array of beta weights per fold
     % - cR:           Reduced design matrix with only selected regressors
     % - subIdx:       New regressor group indices for selected subset
-    % - cRidge:       Ridge regularization penalty used
+    % - cRidge:       Ridge regularisation penalty used
     % - cLabels:      Confirmed regressor labels used
 
 % 1. Get regressors matching the desired labels

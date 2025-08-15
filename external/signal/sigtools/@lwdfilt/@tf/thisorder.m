@@ -1,0 +1,35 @@
+function n = thisorder(Hd)
+%THISORDER Filter order.
+%   THISORDER(Hd) returns the order of filter Hd.
+%
+%   See also DFILT.   
+  
+%   Author: Thomas A. Bryan
+%   Copyright 1988-2017 The MathWorks, Inc.
+
+% This should be private
+
+b = Hd.Numerator;
+a = Hd.Denominator;
+
+% Converting to statespace may have left some coefficients very near zero
+% because of numerical roundoff.  Remove trailing zeros.
+
+% Normalize vectors so that there is not a large difference in magnitudes.
+if ~isempty(b) & max(abs(b))~=0
+  b = b/max(abs(b));
+end
+if ~isempty(a) & max(abs(a))~=0
+  a = a/max(abs(a));
+end
+
+% Remove trailing "zeros" of a & b.
+if ~isempty(b)
+  b = b(1:find(b~=0, 1, 'last' ));
+end
+if ~isempty(a)
+  a = a(1:find(a~=0, 1, 'last' ));
+end
+
+n = max(length(b),length(a)) - 1;
+

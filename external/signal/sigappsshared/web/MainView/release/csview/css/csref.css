@@ -1,0 +1,1 @@
+.override {color: #125687; font-weight: bold;}.override .api-name::after {content: 'Overridden'; color: #aaa; display: block; font-size: smaller; font-weight: normal;}#tree .item_override {float: right; color: #125687; font-weight: bold;}

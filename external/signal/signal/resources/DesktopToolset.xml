@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2011-2016 The MathWorks, Inc. -->
+<!-- THIS FILE CONTRIBUTES TO THE MATLAB APPS & PLOTS GALLERY WHICH IS CAREFULLY CURATED -->
+<!-- ADDITIONS AND CHANGES MUST GO THROUGH A DESIGN REVIEW PROCESS WITH SENIOR MANAGEMENT -->
+<!-- THIS PROCESS IS MANAGED BY THE MATLAB DESKTOP TEAM. CONSULT THE TOOLSTRIP GUIDELINES TO GET STARTED -->
+<toolset id="signal_toolset" message_catalog="signal:desktop">
+    <tool id="fdatool">
+        <icon filename="signal_app_16.png" path="." />
+        <icon filename="signal_app_24.png" path="." />
+        <callback>filterDesigner</callback>
+        <parent_tool id="signal_products" toolset_id="apps_toolset" />
+    </tool>
+    <tool id="signalAnalyzer">
+        <icon filename="signal-analyzer-app-24.png" path="." />
+        <icon filename="signal-analyzer-app-16.png" path="." />
+        <callback>signalAnalyzer</callback>
+        <parent_tool id="signal_products" toolset_id="apps_toolset" />
+        <parent_tool id="favorites" toolset_id="apps_toolset" priority="700" />
+    </tool>
+    <tool id="signalLabeler">
+        <icon filename="signal-labeler-app-24.png" path="." />
+        <icon filename="signal-labeler-app-16.png" path="." />
+        <callback>signalLabeler</callback>
+        <parent_tool id="signal_products" toolset_id="apps_toolset" />
+    </tool>
+    <tool id="wintool">
+        <icon filename="signal_app_16.png" path="." />
+        <icon filename="signal_app_24.png" path="." />
+        <callback>windowDesigner</callback>
+        <parent_tool id="signal_products" toolset_id="apps_toolset" />
+    </tool>
+
+    <tool id="fvtool" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="fvtool1.png" path="../../matlab/icons/signal" />
+        <icon filename="fvtool1.png" path="../../matlab/icons/signal" />
+        <function>fvtool</function>
+        <visibility>@(args) signalplotfunc('defaultshow','fvtool',[],args)</visibility>
+        <gui>yes</gui>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="fvtoolmag" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="mag.png" path="../../matlab/icons/signal" />
+        <icon filename="button_mag.gif" path="../../matlab/icons/signal" />
+        <function>fvtool</function>
+        <visibility>@(args) signalplotfunc('defaultshow','fvtoolmag',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','fvtoolmag',varNames,varValues)</action>
+        <methodof>dfilt.abstractfarrowfd,dfilt.multistage,dfilt.singleton</methodof>
+        <gui>yes</gui>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="fvtoolphase" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="phase.png" path="../../matlab/icons/signal" />
+        <icon filename="button_phase.gif" path="../../matlab/icons/signal" />
+        <function>fvtool</function>
+        <visibility>@(args) signalplotfunc('defaultshow','fvtoolphase',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','fvtoolphase',varNames,varValues)</action>
+        <methodof>dfilt.abstractfarrowfd,dfilt.multistage,dfilt.singleton</methodof>
+        <gui>yes</gui>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="fvtoolmagphase" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="magphase.png" path="../../matlab/icons/signal" />
+        <icon filename="button_magphase.gif" path="../../matlab/icons/signal" />
+        <function>fvtool</function>
+        <visibility>@(args) signalplotfunc('defaultshow','fvtoolmagphase',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','fvtoolmagphase',varNames,varValues)</action>
+        <methodof>dfilt.abstractfarrowfd,dfilt.multistage,dfilt.singleton</methodof>
+        <gui>yes</gui>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="fvtoolgrpdelay" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="grpdelay.png" path="../../matlab/icons/signal" />
+        <icon filename="button_grpdelay.gif" path="../../matlab/icons/signal" />
+        <function>fvtool</function>
+        <visibility>@(args) signalplotfunc('defaultshow','fvtoolgrpdelay',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','fvtoolgrpdelay',varNames,varValues)</action>
+        <methodof>dfilt.abstractfarrowfd,dfilt.multistage,dfilt.singleton</methodof>
+        <gui>yes</gui>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="fvtoolphdelay" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="phdelay.png" path="../../matlab/icons/signal" />
+        <icon filename="button_phase.gif" path="../../matlab/icons/signal" />
+        <function>fvtool</function>
+        <visibility>@(args) signalplotfunc('defaultshow','fvtoolphdelay',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','fvtoolphdelay',varNames,varValues)</action>
+        <methodof>dfilt.abstractfarrowfd,dfilt.multistage,dfilt.singleton</methodof>
+        <gui>yes</gui>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="fvtoolimpulse" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="impulse.png" path="../../matlab/icons/signal" />
+        <icon filename="button_impulse.gif" path="../../matlab/icons/signal" />
+        <function>fvtool</function>
+        <visibility>@(args) signalplotfunc('defaultshow','fvtoolimpulse',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','fvtoolimpulse',varNames,varValues)</action>
+        <methodof>dfilt.abstractfarrowfd,dfilt.multistage,dfilt.singleton</methodof>
+        <gui>yes</gui>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="fvtoolstep" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="step.png" path="../../matlab/icons/signal" />
+        <icon filename="button_step.gif" path="../../matlab/icons/signal" />
+        <function>fvtool</function>
+        <visibility>@(args) signalplotfunc('defaultshow','fvtoolstep',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','fvtoolstep',varNames,varValues)</action>
+        <methodof>dfilt.abstractfarrowfd,dfilt.multistage,dfilt.singleton</methodof>
+        <gui>yes</gui>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="fvtoolpolezero" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="polezero.png" path="../../matlab/icons/signal" />
+        <icon filename="button_polezero.gif" path="../../matlab/icons/signal" />
+        <function>fvtool</function>
+        <visibility>@(args) signalplotfunc('defaultshow','fvtoolpolezero',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','fvtoolpolezero',varNames,varValues)</action>
+        <methodof>dfilt.abstractfarrowfd,dfilt.multistage,dfilt.singleton</methodof>
+        <gui>yes</gui>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="fvtoolfiltcoef" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="filtcoef.png" path="../../matlab/icons/signal" />
+        <icon filename="button_filtcoef.gif" path="../../matlab/icons/signal" />
+        <function>fvtool</function>
+        <visibility>@(args) signalplotfunc('defaultshow','fvtoolfiltcoef',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','fvtoolfiltcoef',varNames,varValues)</action>
+        <methodof>dfilt.abstractfarrowfd,dfilt.multistage,dfilt.singleton</methodof>
+        <gui>yes</gui>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="fvtoolfiltinfo" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="filtinfo.png" path="../../matlab/icons/signal" />
+        <icon filename="button_filterinfo.gif" path="../../matlab/icons/signal" />
+        <function>fvtool</function>
+        <visibility>@(args) signalplotfunc('defaultshow','fvtoolfiltinfo',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','fvtoolfiltinfo',varNames,varValues)</action>
+        <methodof>dfilt.abstractfarrowfd,dfilt.multistage,dfilt.singleton</methodof>
+        <gui>yes</gui>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="freqs" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="freqs.png" path="../../matlab/icons/signal" />
+        <icon filename="freqs.png" path="../../matlab/icons/signal" />
+        <function>freqs</function>
+        <visibility>@(args) signalplotfunc('defaultshow','freqs',[],args)</visibility>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="impz" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="impz.png" path="../../matlab/icons/signal" />
+        <icon filename="impz.png" path="../../matlab/icons/signal" />
+        <function>impz</function>
+        <visibility>@(args) signalplotfunc('defaultshow','impz',[],args)</visibility>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="stepz" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="stepz.png" path="../../matlab/icons/signal" />
+        <icon filename="stepz.png" path="../../matlab/icons/signal" />
+        <function>stepz</function>
+        <visibility>@(args) signalplotfunc('defaultshow','stepz',[],args)</visibility>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="freqz" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="freqz.png" path="../../matlab/icons/signal" />
+        <icon filename="freqz.png" path="../../matlab/icons/signal" />
+        <function>freqz</function>
+        <visibility>@(args) signalplotfunc('defaultshow','freqz',[],args)</visibility>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="grpdelay" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="grpdelay.png" path="../../matlab/icons/signal" />
+        <icon filename="grpdelay.png" path="../../matlab/icons/signal" />
+        <function>grpdelay</function>
+        <visibility>@(args) signalplotfunc('defaultshow','grpdelay',[],args)</visibility>
+        <gui>yes</gui>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="phasedelay" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="phasedelay.png" path="../../matlab/icons/signal" />
+        <icon filename="phasedelay.png" path="../../matlab/icons/signal" />
+        <function>phasedelay</function>
+        <visibility>@(args) signalplotfunc('defaultshow','phasedelay',[],args)</visibility>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="phasez" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="phasez.png" path="../../matlab/icons/signal" />
+        <icon filename="phasez.png" path="../../matlab/icons/signal" />
+        <function>phasez</function>
+        <visibility>@(args) signalplotfunc('defaultshow','phasez',[],args)</visibility>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="zerophase" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="zerophase.png" path="../../matlab/icons/signal" />
+        <icon filename="zerophase.png" path="../../matlab/icons/signal" />
+        <function>zerophase</function>
+        <visibility>@(args) signalplotfunc('defaultshow','zerophase',[],args)</visibility>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="zplane" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="zplane.png" path="../../matlab/icons/signal" />
+        <icon filename="zplane.png" path="../../matlab/icons/signal" />
+        <function>zplane</function>
+        <visibility>@(args) signalplotfunc('defaultshow','zplane',[],args)</visibility>
+        <parent_tool id="category_signal_filterAnalysis" toolset_id="plot_toolset" />
+    </tool>
+
+    <tool id="wvtool" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="wvtool.png" path="../../matlab/icons/signal" />
+        <icon filename="wvtool.png" path="../../matlab/icons/signal" />
+        <function>wvtool</function>
+        <visibility>@(args) signalplotfunc('defaultshow','wvtool',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','wvtool',varNames,varValues)</action>
+        <gui>yes</gui>
+        <parent_tool id="category_signal_windowVis" toolset_id="plot_toolset" />
+    </tool>
+
+    <tool id="cpsd" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="cpsd.png" path="../../matlab/icons/signal" />
+        <icon filename="cpsd.png" path="../../matlab/icons/signal" />
+        <function>cpsd</function>
+        <visibility>@(args) signalplotfunc('defaultshow','cpsd',[],args)</visibility>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="mscohere" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="mscohere.png" path="../../matlab/icons/signal" />
+        <icon filename="mscohere.png" path="../../matlab/icons/signal" />
+        <function>mscohere</function>
+        <visibility>@(args) signalplotfunc('defaultshow','mscohere',[],args)</visibility>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="periodogram_psd" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="periodogram_psd.png" path="../../matlab/icons/signal" />
+        <icon filename="periodogram_psd.png" path="../../matlab/icons/signal" />
+        <function>periodogram</function>
+        <visibility>@(args) signalplotfunc('defaultshow','periodogram_psd',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','periodogram_psd',varNames,varValues)</action>
+        <labelfcn>@(varNames,varVals) signalplotfunc('defaultlabel','periodogram_psd',varNames,varVals)</labelfcn>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="periodogram_msp" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="periodogram.png" path="../../matlab/icons/signal" />
+        <icon filename="periodogram.png" path="../../matlab/icons/signal" />
+        <function>periodogram</function>
+        <visibility>@(args) signalplotfunc('defaultshow','periodogram_power',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','periodogram_power',varNames,varValues)</action>
+        <labelfcn>@(varNames,varVals) signalplotfunc('defaultlabel','periodogram_msp',varNames,varVals)</labelfcn>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="pwelch_psd" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="pwelch_psd.png" path="../../matlab/icons/signal" />
+        <icon filename="pwelch_psd.png" path="../../matlab/icons/signal" />
+        <function>pwelch</function>
+        <visibility>@(args) signalplotfunc('defaultshow','pwelch_psd',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','pwelch_psd',varNames,varValues)</action>
+        <labelfcn>@(varNames,varVals) signalplotfunc('defaultlabel','pwelch_psd',varNames,varVals)</labelfcn>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="pwelch_msp" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="pwelch.png" path="../../matlab/icons/signal" />
+        <icon filename="pwelch.png" path="../../matlab/icons/signal" />
+        <function>pwelch</function>
+        <visibility>@(args) signalplotfunc('defaultshow','pwelch_power',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','pwelch_power',varNames,varValues)</action>
+        <labelfcn>@(varNames,varVals) signalplotfunc('defaultlabel','pwelch_power',varNames,varVals)</labelfcn>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="pmtm" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="pmtm_psd.png" path="../../matlab/icons/signal" />
+        <icon filename="pmtm_psd.png" path="../../matlab/icons/signal" />
+        <function>pmtm</function>
+        <visibility>@(args) signalplotfunc('defaultshow','pmtm',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','pmtm',varNames,varValues)</action>
+        <labelfcn>@(varNames,varVals) signalplotfunc('defaultlabel','pmtm',varNames,varVals)</labelfcn>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="pburg" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="pburg_psd.png" path="../../matlab/icons/signal" />
+        <icon filename="pburg_psd.png" path="../../matlab/icons/signal" />
+        <function>pburg</function>
+        <visibility>@(args) signalplotfunc('defaultshow','pburg',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','pburg',varNames,varValues)</action>
+        <labelfcn>@(varNames,varVals) signalplotfunc('defaultlabel','pburg',varNames,varVals)</labelfcn>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="pcov" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="pcov_psd.png" path="../../matlab/icons/signal" />
+        <icon filename="pcov_psd.png" path="../../matlab/icons/signal" />
+        <function>pcov</function>
+        <visibility>@(args) signalplotfunc('defaultshow','pcov',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','pcov',varNames,varValues)</action>
+        <labelfcn>@(varNames,varVals) signalplotfunc('defaultlabel','pcov',varNames,varVals)</labelfcn>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="pmcov" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="pmcov_psd.png" path="../../matlab/icons/signal" />
+        <icon filename="pmcov_psd.png" path="../../matlab/icons/signal" />
+        <function>pmcov</function>
+        <visibility>@(args) signalplotfunc('defaultshow','pmcov',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','pmcov',varNames,varValues)</action>
+        <labelfcn>@(varNames,varVals) signalplotfunc('defaultlabel','pmcov',varNames,varVals)</labelfcn>
+        <producthelp>signal</producthelp>
+        <refpagepath>spectrum.html</refpagepath>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="pyulear" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="pyulear_psd.png" path="../../matlab/icons/signal" />
+        <icon filename="pyulear_psd.png" path="../../matlab/icons/signal" />
+        <function>pyulear</function>
+        <visibility>@(args) signalplotfunc('defaultshow','pyulear',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','pyulear',varNames,varValues)</action>
+        <labelfcn>@(varNames,varVals) signalplotfunc('defaultlabel','pyulear',varNames,varVals)</labelfcn>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="peig" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="peig.png" path="../../matlab/icons/signal" />
+        <icon filename="peig.png" path="../../matlab/icons/signal" />
+        <function>peig</function>
+        <visibility>@(args) signalplotfunc('defaultshow','peig',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','peig',varNames,varValues)</action>
+        <labelfcn>@(varNames,varVals) signalplotfunc('defaultlabel','peig',varNames,varVals)</labelfcn>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="pmusic" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="pmusic.png" path="../../matlab/icons/signal" />
+        <icon filename="pmusic.png" path="../../matlab/icons/signal" />
+        <function>pmusic</function>
+        <visibility>@(args) signalplotfunc('defaultshow','pmusic',[],args)</visibility>
+        <action>@(varNames,varValues) signalplotfunc('defaultdisplay','pmusic',varNames,varValues)</action>
+        <labelfcn>@(varNames,varVals) signalplotfunc('defaultlabel','pmusic',varNames,varVals)</labelfcn>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="spectrogram" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="spectrogram.png" path="../../matlab/icons/signal" />
+        <icon filename="spectrogram.png" path="../../matlab/icons/signal" />
+        <function>spectrogram</function>
+        <visibility>@(args) signalplotfunc('defaultshow','spectrogram',[],args)</visibility>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="tfestimate" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="tfestimate.png" path="../../matlab/icons/signal" />
+        <icon filename="tfestimate.png" path="../../matlab/icons/signal" />
+        <function>tfestimate</function>
+        <visibility>@(args) signalplotfunc('defaultshow','tfestimate',[],args)</visibility>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+    <tool id="strips" handler_class="com.mathworks.mlwidgets.graphics.PlotToolSetHandler">
+        <icon filename="strips.png" path="../../matlab/icons/signal" />
+        <icon filename="strips.png" path="../../matlab/icons/signal" />
+        <function>strips</function>
+        <visibility>@(args) signalplotfunc('defaultshow','strips',[],args)</visibility>
+        <parent_tool id="category_signal_spectralEst" toolset_id="plot_toolset" />
+    </tool>
+</toolset>

@@ -1,7 +1,6 @@
 # Ignoring files in Git for cleaniness and avoid uploading large files
 
 # Ignore folders
-external/
 data/
 
 # Ignore MATLAB temporary and backup files

@@ -1,0 +1,1 @@
+.mw-data-number-renderer {font-size: inherit; font-family: monospace; display: block; text-align: right; text-overflow: ellipsis; overflow: hidden;}.mw-data-number-renderer::after {content: ''; display: block;}

@@ -1,0 +1,8 @@
+function stan_deleteCompiledModel(modelName)
+models_dir = fullfile( fileparts(mfilename('fullpath')), 'compiledStanModels');
+modelFile = fullfile(models_dir, [modelName '.stan']);
+
+delete(strrep(modelFile,'.stan','.exe'));
+delete(strrep(modelFile,'.stan','.mat'));
+delete(strrep(modelFile,'.stan','.hpp'));
+end

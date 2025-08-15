@@ -55,9 +55,6 @@ for i = 1:length(mouseList)
 
         % 9. Normalise and recentre the expanded, clean matrix to avoid
         % computational issues down the line, and add small jitter
-        % NOTE: Adding jitter is due to in checking linear dependency, binary values
-        % and continuous values combined will cause issues from the 0s. Adding 
-        % jitter will save us from the issue without affecting the results
         expandR_raw = [taskMatClean, vidMatClean, trialMatClean]; % Get the predictor regressor matrix
         regLabels = [taskLabels, vidLabels, trialLabels]; % % Get the labels for predictor regressor matrix
         [expandR_standardised, obj.fluorDALeftCleanStandardised] = normaliseAndRecentre(expandR_raw, obj.fluorDALeftClean); 

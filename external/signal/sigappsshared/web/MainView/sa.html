@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <title>Signal Analyzer</title>
+    <!-- Copyright 2012-2019 The MathWorks, Inc. -->
+
+    <!-- Include web widget required css files -->
+    <!-- CSS : implied media="all" -->
+    <link rel="stylesheet" href="release/css/webwidget.dojo.css"/>
+    <link rel="stylesheet" href="release/css/webwidget.css"/>
+
+    <!-- Include workspace browser required css files -->
+    <link rel="stylesheet" href="release/workspacebrowser/css/workspacebrowser.css"/>
+    <!-- Include RTC widget required css files -->
+    <link rel="stylesheet" href="release/rtc/css/RichTextComponentDefaultVisualFamily.css"/>
+
+    <!--[if IE 9]>
+        <link href="release/css/overrides_ie9.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+
+    <!-- Custom CSS Imports -->
+    <link rel="stylesheet" type="text/css" href="release/SA/css/sdiCore.css" />
+    <link rel="stylesheet" type="text/css" href="release/SA/css/generatedCss.css"/>
+</head>
+
+<body class="tundra">
+    <div id="metricsOverlay" class="metricsOverlay">
+        <div id="filenameTooltip" class="filenameTooltip"></div>
+        <div id="sectionOverlay" class="sectionOverlay">
+            <div id="saveLoadDonutArea" class="saveLoadDonutArea"></div>
+            <div id="saveLoadStatistics" class="saveLoadStatistics">
+                <table class="metricsTable">
+                    <colgroup>
+                        <col span="1" class="timeColumn"/>
+                        <col span="1" class="dataColumn"/>
+                        <col span="1" class="dataColumn"/>
+                    </colgroup>
+                    <tr>
+                        <td colspan="3" class="metricsTitle">
+                            <span id="statusMessageBold" class="boldSpan"></span>
+                            <span id="statusMessageNotBold" class="notBoldSpan"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="saveLoadElapsedTime" class="metricsDataLeft"></td>
+                        <td id="saveLoadDataTransferred" class="metricsDataCenter"></td>
+                        <td id="saveLoadThroughput" class="metricsDataRight"></td>
+                    </tr>
+                </table>
+            </div>
+            <a class="menuLinks">
+                <div class="menuLinks">
+                    <div id="saveLoadActionButtonArea" class="saveLoadActionButtonArea"></div>
+                </div>
+            </a>
+            <div id="overlayPipeLeft" class="overlayPipeLeft">|</div>
+            <div id="overlayPipeRight" class="overlayPipeRight">|</div>
+            <div id="metricsTitleFade" class="metricsTitleFade"></div>
+        </div>
+    </div>
+    <div id="modalProgressBarBkgnd"></div>
+    <div id="progressBarSection">
+        <span id="progressBarText"></span>
+        <span id="progressBarAnimation"></span>
+    </div>
+    <!--Include scripts after any HTML, so HTML will render before script loading.-->
+    <script src="release/SA/dojoConfig-release-global.js"></script>
+    <!-- Include dojo release build -->
+    <script type="text/javascript" src="release/dojo/dojo.js"></script>
+    <script type="text/javascript">
+        // Require browser compatibility check lib
+        require(["SA/browsercheck"], function () {
+            // Require browser compatibility check module, which will run the checks
+            require(["mw-browser-utils/BrowserCheck"], function () {
+                // If the browser compatibility check passes, require in the web widget lib
+                require(["SA/Base", "SA/SA"], function () {
+                    // Load in application code
+                    require([
+                        "dojo/domReady",  
+                        "dojo/_base/lang",
+                        "dojo/_base/unload",  
+                        "SA/ViewSA"
+                     ], function(
+                        ready,  
+                        lang,
+                        baseUnload,
+                        View) {
+                        ready(function() {   
+                            // Create SDI v2.0
+                            View.createSA();                            
+                            baseUnload.addOnUnload(lang.hitch(View, View.destroy));
+                        });
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

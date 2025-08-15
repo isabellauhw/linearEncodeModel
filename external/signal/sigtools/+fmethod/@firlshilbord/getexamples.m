@@ -1,0 +1,13 @@
+function examples = getexamples(this)
+%GETEXAMPLES   Get the examples.
+
+%   Copyright 1999-2015 The MathWorks, Inc.
+
+examples = {{ ...
+    'Design a 30th order type III Hilbert Transformer.',...
+    'd = fdesign.hilbert(''N,TW'',30,.2);', ...
+    'Hd = design(d,''firls'', ''FilterStructure'', ''dfasymfir'');', ...
+    'fvtool(Hd,''MagnitudeDisplay'',''Zero-phase'',''FrequencyRange'',''[-pi, pi)'')'}};
+
+
+% [EOF]

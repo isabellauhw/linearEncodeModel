@@ -1,0 +1,16 @@
+function help_window(this)
+%HELP_WINDOW   
+
+%   Copyright 1999-2015 The MathWorks, Inc.
+
+window_str = sprintf('%s\n%s\n%s\n%s\n%s', ...
+    '    HD = DESIGN(..., ''Window'', WINDOW) designs using the window specified by WINDOW.', ...
+    '    WINDOW can be a string or function handle which references the window function,', ...
+    '    or it can be the window vector itself.  If the window function requires more', ...
+    '    inputs, a cell array can be used.',...
+    '    Click <a href="matlab:help window">here</a> for the full list of available windows.');
+
+disp(window_str);
+disp(' ');
+
+% [EOF]

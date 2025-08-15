@@ -1,0 +1,1 @@
+.container .highlighted {background-color: rgb(166,220,255);}.container .highlighted[reason="warning"] {background-color: rgba(241, 181, 28, 0.8);}.container .highlighted[reason="error"] {background-color: rgba(226, 61, 45, 0.8);}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" viewBox="0 0 315551 333334" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+    <defs>
+        <style>.cls-1{fill:url(#New_Gradient_Swatch);}</style>
+        <linearGradient id="New_Gradient_Swatch" x1="15" y1="231.85" x2="15" y2="213.85" gradientTransform="translate(0 -207.85)" gradientUnits="userSpaceOnUse">
+            <stop offset="0.1" stop-color="#0b3f6f" />
+            <stop offset="0.45" stop-color="#185991" />
+            <stop offset="1" stop-color="#3088cd" />
+        </linearGradient>
+    </defs>
+    <title>v3</title>
+    <path class="cls-1" d="M278514 63057V37037H65983l115429 116031c7191 7231 7159 18923-72 26114L63339 296296h215176v-25296h37037v43815c0 10228-8291 18519-18519 18519H18466v-54c-4743 0-9485-1816-13093-5444-7191-7231-7159-18923 72-26114l136744-135715L9411 32537c-3929-3396-6416-8416-6416-14017C2995 8292 11286 1 21514 1h275519c10228 0 18519 8291 18519 18519v44539h-37037z"/>
+</svg>

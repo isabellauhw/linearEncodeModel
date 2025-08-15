@@ -1,0 +1,13 @@
+function help_matchexactly(this)
+%HELP_MATCHEXACTLY   Display help for MatchExactly.
+
+%   Copyright 1999-2015 The MathWorks, Inc.
+
+disp(sprintf('%s\n%s\n%s\n%s', ...
+    '    HD = DESIGN(..., ''MatchExactly'', MATCH) designs a Butterworth filter', ...
+    '    and matches the frequency and magnitude specification for the band', ...
+    '    MATCH exactly.  The other band will exceed the specification.  MATCH', ...
+    '    can be ''stopband'' or ''passband'' and is ''stopband'' by default.'));
+disp(' ');
+
+% [EOF]

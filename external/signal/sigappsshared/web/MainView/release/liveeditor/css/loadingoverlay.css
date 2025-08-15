@@ -1,0 +1,1 @@
+#rtcLoadingOverlay {position: absolute; height: 100%; width: 100%; background: #fff; z-index: 10000;}#rtcLoadingOverlaySpinner {position: relative; left: calc(50% - 16px); top: calc(50% - 16px); height: 32px; width: 32px; background-image: url('../images/spinner.gif'); background-repeat: no-repeat; background-size: 100%;}

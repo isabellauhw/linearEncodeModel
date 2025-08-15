@@ -1,0 +1,1 @@
+.ColorSelector {display: flex; align-items: center;}.ColorSelector .label {justify-self: flex-start; flex-grow: 1;}.ColorSelector .color-picker {width: 30px; height: 25px; cursor: pointer;}

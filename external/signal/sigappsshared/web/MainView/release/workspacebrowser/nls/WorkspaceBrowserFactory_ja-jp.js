@@ -1,0 +1,35 @@
+define('workspacebrowser/nls/WorkspaceBrowserFactory_ja-jp',{
+'datatoolsservices/l10n/nls/datatoolsservices':{"errorDialogTitle":"エラー","dataTypeMenuCustomInputPlaceholder":"カスタム形式を入力してください","_localized":{}}
+,
+'mw-notifications/l10n/nls/NotificationsResources':{"errorIconAltText":"Error Icon","warningIconAltText":"Warning Icon","infoIconAltText":"Information Icon","questionIconAltText":"Question Icon","successIconAltText":"Success Icon","_localized":{}}
+,
+'mw-dialogs/l10n/nls/dialog':{"ok":"OK","cancel":"キャンセル","switchPanes":"ウィンドウの切り替え","close":"閉じる","yes":"はい","no":"いいえ","help":"ヘルプ","submit":"送信","save":"保存","find":"検索","create":"作成","dontSave":"保存しない","apply":"適用","revert":"元に戻す","_localized":{}}
+,
+'mw-keybindings/l10n/nls/keyBindings':{"ALT":"Alt","BACKSPACE":"Backspace","CAPS_LOCK":"Caps Lock","CLEAR":"Clear","CTRL":"Ctrl","DELETE":"Delete","DOWN":"Down","ENTER":"Enter","END":"End","ESCAPE":"Escape","HELP":"Help","HOME":"Home","INSERT":"Insert","LEFT":"Left","NUM_LOCK":"Num Lock","NUM_PAD":"Num Pad","PAGE_UP":"Page Up","PAGE_DOWN":"Page Down","PAUSE_BREAK":"Pause","RIGHT":"Right","SCROLL_LOCK":"Scroll Lock","SHIFT":"Shift","SPACE":"Space","TAB":"Tab","UP":"Up","WINDOWS":"Windows","_localized":{}}
+,
+'dijit/nls/loading':{"loadingState":"ロード中...","errorState":"エラーが発生しました。","_localized":{}}
+,
+'l10n/nls/toolstrip':{"toolstripLabel":"ツールストリップ","showLabel":"ラベルの表示","hideLabel":"ラベルの非表示","QAB":"クイック アクセス ツール バー","removeFromQAB":"クイック アクセス ツール バーから削除","addToQAB":"クイック アクセス ツール バーに追加","qabDefaultDropdownLabel":"共通のコントロール","qabOverflowDropdownLabel":"その他のコントロール","restoreFactoryControls":"既定の設定に戻す","restoreFactoryControlsDialogTitle":"復元の確認","restoreFactoryControlsDialogMessage":"すべてのカスタマイズが削除され、クイック アクセス ツール バーが既定の設定に戻されます。​","minimizeToolstrip":"ツールストリップの最小化","restoreToolstrip":"ツールストリップの復元","closeWidget":"\"${0}\" タブを閉じる","removeWidget":"\"${0}\" をギャラリーから削除","homeButtonLabel":"MATLAB ホーム","gallerySearch":"検索","showMore":"さらに表示","noSearchMatchNode":"検索に一致する項目はありません。","emptyCategoryPlaceholder":"このカテゴリは空です","listView":"リスト表示","iconView":"アイコン表示","navTop":"カテゴリを一番上に移動","navBottom":"カテゴリを一番下に移動","favStarAdd":"お気に入りに追加","favStarRemove":"お気に入りから削除","editWidget":"\"${0}\" の編集","favoritesCategoryTitle":"お気に入り","_localized":{}}
+,
+'dijit/nls/common':{"buttonOk":"OK","buttonCancel":"キャンセル","buttonSave":"保存","itemClose":"閉じる","_localized":{}}
+,
+'mw-colorpicker/l10n/nls/ColorPickerResources':{"ok":"OK","cancel":"キャンセル","standardColors":"標準の色","customColors":"カスタム色","recentColors":"最近使用した色","preview":"プレビュー","redTitle":"R","greenTitle":"G","blueTitle":"B","hexTitle":"16 進数","hueTitle":"H","saturationTitle":"S","valueTitle":"V","doubleLabel":"RGB [0-1]","intLabel":"RGB [0-255]","hexLabel":"16 進数","hsvLabel":"HSV","auto":"自動","none":"なし","flat":"フラット","interp":"内挿","texturemap":"テクスチャマップ","invalidHexErrorMessage":"値は有効な 16 進数形式でなければなりません。","_localized":{}}
+,
+'dojo/cldr/nls/number':{"scientificFormat":"#E0","currencySpacing-afterCurrency-currencyMatch":"[:^S:]","infinity":"∞","superscriptingExponent":"×","list":";","percentSign":"%","minusSign":"-","currencySpacing-beforeCurrency-surroundingMatch":"[:digit:]","decimalFormat-short":"000兆","currencySpacing-afterCurrency-insertBetween":" ","nan":"NaN","plusSign":"+","currencySpacing-afterCurrency-surroundingMatch":"[:digit:]","currencySpacing-beforeCurrency-currencyMatch":"[:^S:]","currencyFormat":"¤#,##0.00;(¤#,##0.00)","perMille":"‰","group":",","percentFormat":"#,##0%","decimalFormat-long":"000兆","decimalFormat":"#,##0.###","decimal":".","currencySpacing-beforeCurrency-insertBetween":" ","exponential":"E","_localized":{}}
+,
+'rendererseditors/l10n/nls/app':{"colorOrderEditorAddNew":"色の追加","colorOrderEditorAtLeastOne":"ColorOrder は、少なくとも 1 つの値を含まなければなりません。","errorTitle":"プロパティのエラー","colormapEditorCustom":"カスタム","datepickerPlaceHolder":"日付を選択","filePickerEditorBrowse":"参照","lineStyleSolid":"- 実線","lineStyleDashed":"-- 破線","lineStyleDotted":": 点線","lineStyleDashDot":"-.一点鎖線","lineStyleNone":"なし","markerStylePlus":"+ プラス記号","markerStyleCircle":"o 円","markerStyleAsterisk":"* アスタリスク","markerStylePoint":".点","markerStyleCross":"x 十字","markerStyleSquare":"s 正方形","markerStyleDiamond":"d 菱形","markerStyleUpTriangle":"^ 上向き三角形","markerStyleDownTriangle":"v 下向き三角形","markerStyleRightTriangle":"> 右向き三角形","markerStyleLeftTriangle":"< 左向き三角形","markerStylePentagram":"p 星形五角形","markerStyleHexagram":"h 星形六角形","markerStyleNone":"なし","orderButtonsAdd":"追加","orderButtonsRemove":"削除","orderButtonsUp":"上","orderButtonsDown":"下","defaultLabel":"既定","exactlyLabel":"厳密","integersLabel":"整数","scientificLabel":"科学的","customLabel":"カスタム","decimalsLabel":"位小数","viewFormatErrorText":"正の整数のみが許可されています。","scaleColorTableColorColumnHeader":"色","scaleColorTableStartColumnHeader":"開始","scaleColorTableEndColumnHeader":"終了","scaleColorLimitsExceptionMessage":"範囲の終了は開始より大きくしなければなりません","invalidNumberMessage":"値は数値でなければなりません。","invalidStartColorLimitMessage":"開始は終了より小さい数値でなければなりません","invalidEndColorLimitMessage":"終了は開始より大きい数値でなければなりません","defaultItemName":"項目 %1","defaultOptionName":"オプション %1","defaultStateName":"状態 %1","stateTableSelectedHdr":"選択","stateTableItemsHdr":"項目","ticksEditorErrorMsg":"目盛り値を昇順に指定してください","resetLabel":"自動","stepby":"刻み","ticksEditorStebByError":"ステップ値が小さすぎます","cliboardIsEmpty":"クリップボードが空です","nameColumnLabel":"名前","widthColumnLabel":"幅 (px)","autoColumnLabel":"自動幅","editableColumnLabel":"編集可能","sortableColumnLabel":"並べ替え可能","sunDay":"日曜","monDay":"月曜","tuesDay":"火曜","wednesDay":"水曜","thursDay":"木曜","friDay":"金曜","saturday":"土曜","emptyGraphicsObject":"空","_localized":{}}
+,
+'dijit/form/nls/validate':{"invalidMessage":"入力した値は無効です。","missingMessage":"この値は必須です。","rangeMessage":"この値は範囲外です。","_localized":{}}
+,
+'dijit/form/nls/ComboBox':{"previousMessage":"以前の選択項目","nextMessage":"追加の選択項目","_localized":{}}
+,
+'mw-datepicker/l10n/nls/CalendarResources':{"previousMonthTooltipText":"前の月を表示します","todayTooltipText":"今日を表示します","nextMonthTooltipText":"次の月を表示します","monthTooltipText":"月を選択します","yearTooltipText":"年を選択します","_localized":{}}
+,
+'mw-datepicker/l10n/nls/DatePickerResources':{"disabledDateMessage":"日付は許可されていません。","invalidDateMessage":"無効な日付です。%1 の形式を使用してください。","missingDateMessage":"日付が見つかりません。%1 を指定してください。","_localized":{}}
+,
+'rendererseditors/l10n/nls/mwTableRenderers':{"loading":"読み込み中...","_localized":{}}
+,
+'variableeditor/app/l10n/nls/app':{"errorDialogTitle":"エラー","invalidHeaderName":"${varName} は有効な変数名ではありません","duplicateVariableNames":"変数名が重複しています: ${varName}","structNameColumn":"名前","structFieldColumn":"フィールド","structPropertyColumn":"プロパティ","structValueColumn":"値","structSizeColumn":"サイズ","structClassColumn":"クラス","emptyGraphicsObject":"空","_localized":{}}
+,
+'workspacebrowser/app/l10n/nls/app':{"helloWorld":"Hello World!","dialogTitle":"Title","title":"ワークスペース","_localized":{}}
+});

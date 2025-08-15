@@ -1,0 +1,1 @@
+.pct-log {border: 1px solid silver; height: 150px; background: white; overflow: auto; font-family: monospace; font-size: 8pt; margin: 2px; padding: 2px; position: fixed; width: calc(100% - 4px); z-index: 100; resize: auto;}.pct-log-entry {white-space: nowrap;}.pct-log-entry-timestamp {padding-right: 8px; color: #333; font-style: italic;}

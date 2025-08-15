@@ -1,0 +1,13 @@
+function examples = getexamples(this)
+%GETEXAMPLES   Get the examples.
+
+%   Copyright 1999-2015 The MathWorks, Inc.
+
+examples = {{ ...
+    'Design 51th order least-squares differentiator.', ...
+    'h  = fdesign.differentiator(''N'',51);', ...
+    'Hd = design(h, ''firls'', ''FilterStructure'', ''dfasymfir'');', ...
+    'fvtool(Hd, ''MagnitudeDisplay'',''Magnitude'')'}};
+
+
+% [EOF]

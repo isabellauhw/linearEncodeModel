@@ -1,3 +1,8 @@
+%% vidDeconv_extractFacemapData
+% An example data loading script to load and compile the behavioural data and
+% organise them as a table, stored in the object obj for running the
+% configuration.
+
 % Define subjects and sessions
 mouseList = {'MFE008'};
 sessionList = {'2022-09-13_1'};

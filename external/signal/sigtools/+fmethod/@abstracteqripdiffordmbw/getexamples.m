@@ -1,0 +1,13 @@
+function examples = getexamples(~)
+%GETEXAMPLES Get the examples.
+
+%   Copyright 1999-2015 The MathWorks, Inc.
+
+examples = {{ ...
+    'Design a 50th order equiripple differentiator with a passband frequency of .4.', ...
+    'h  = fdesign.differentiator(''N,Fp,Fst'',50,.4,.45);', ...
+    'Hd = design(h, ''equiripple'', ''FilterStructure'', ''dfasymfir'');', ...
+    'fvtool(Hd, ''MagnitudeDisplay'',''Magnitude'')'}};
+
+% [EOF]
+

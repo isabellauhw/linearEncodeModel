@@ -1,0 +1,8 @@
+function b = isspecmet(this, Hd)
+%ISSPECMET   True if the object's specification has been met by the filter.
+
+%   Copyright 2005 The MathWorks, Inc.
+
+b = base_isspecmet(this, Hd, {'Apass', '<'}, {'Astop', '>'});
+
+% [EOF]
